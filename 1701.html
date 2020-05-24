@@ -1,0 +1,94 @@
+<DOCTYPE! html>
+
+<html lang=en-US>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Kader Arnold">	
+        <meta name="viewport" content="width=device-width">
+
+        <link type="text/css" href="style.css" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://use.typekit.net/xfu2pjs.css">
+
+
+        <title id="tabspace">1701 Locust</title> 
+    </head>
+
+
+    <div class="container">
+        <header>
+
+            <div class="contact-container">
+                <h1 class="contact-container">1701 LOCUST ST</h1>
+                <h2 class=contact-container">(215) 251-1701</h2>	
+                     
+            </div>
+        <hr>
+        <a id="menu" href="menu.jpg" target="_blank"><h3 class="h3">Menu</h3></a>
+
+        <h5 class="h3">
+            <form>
+                <label for="email">Mailing List:</label>
+                <input type="email" id="email" name="email">
+                <button type="submission">Enter</button>
+            </form>
+        </h4>
+        <hr>
+        </header>
+
+         <body>
+
+        <script> 
+
+            var i = 0;
+            var pictures = [];
+            var time = 1000;
+
+
+            pictures[2] = "oscar.jpg";
+            pictures[0] = "crabcakes.jpg";
+            pictures[5] = "images/osc.jpg"
+            pictures[1] = "images/4.jpg"
+            pictures[6] = "images/3.jpg"
+            pictures[3] = "images/1.jpg"
+            pictures[4] = "images/2.jpg"
+             
+            function slideshow () {
+
+                document.slide.src = pictures[i];
+                
+                if (i < pictures.length - 1) {
+                    i++;
+                }
+                else {
+                    i = 0;
+                }
+
+                setTimeout("slideshow()",time);
+
+            }
+
+            window.onload = slideshow;     
+         
+        </script>
+        <img name="slide" height=250 width=420 />
+
+        <hr>
+        </body>
+
+        <footer> 
+            <ul>
+                <li><a class="footer-container">Contact</a></li>
+                <li><a class="footer-container">Gallery</a></li>
+                <li><a class="footer-container">About Us</a></li>
+                <li><a class="footer-container">Critical Sanitation Policy</a></li>
+            <ul>
+            <br>
+            <p class="pline">
+                © 2020 1701 Locust Steaks & Seafood, llc.
+            </p>
+        </footer>
+
+    </div>
+
+</html>
